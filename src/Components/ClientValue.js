@@ -22,13 +22,13 @@ const ClientValue = () => {
   };
 
     return (
-        <section className= "py-24 px-6 md:px-12 lg:px-24 mt-16">
-            <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <section className= "py-10  lg:py-24 px-6 md:px-12 lg:px-24 lg:mt-16">
+            <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
                 
                 {/* === LEFT COLUMN: Text Content and Button === */}
                 <div className="lg:pr-2">
-                    <h2 className="text-4xl sm:text-5xl font-normal text-[#2C438A] mb-10 leading-normal">
-                        What Our Clients Value <br className="hidden sm:block " /> <span className='block mt-6'> About Us</span> 
+                    <h2 className="text-4xl sm:text-5xl font-normal text-[#2C438A] mb-10 leading-normal ">
+                        What Our Clients Value <br className="hidden sm:block " /> <span className='block mt-2 sm:mt-2 lg:mt-6'> About Us</span> 
                     </h2>
                     
                     <p className="text-[16px] text-[#444B46] mb-10 tracking-wider leading-loose">
@@ -43,7 +43,7 @@ const ClientValue = () => {
                         className="
                             bg-[#2C438A] text-white font-medium 
                             py-4 px-6
-                            hover:bg-opacity-90 transition duration-300 tracking-wider
+                            hover:bg-[#48cbe7] transition duration-300 tracking-wider
                         "
                     >
                         Our Expertise
@@ -52,16 +52,16 @@ const ClientValue = () => {
 
                 {/* === RIGHT COLUMN: Value Items (Accordion Style) === */}
                
-  <div className="pt-4">
+  <div className="mt-2">
   {valueItems.map((item, index) => (
     <div
       key={index}
-      className={`flex flex-col py-5 ${
+      className={`flex flex-col py-6 ${
         index < valueItems.length - 1 ? "border-b border-gray-400" : ""
       }`}
     >
       <div className="flex justify-between items-center">
-        <span className="text-2xl font-normal text-gray-800 tracking-wider">
+        <span className="text-[22px] font-normal text-gray-800 tracking-wider">
           {item.text}
         </span>
 

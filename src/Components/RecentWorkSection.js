@@ -22,7 +22,7 @@ const workData = [
     },
     {
         description: "See examples of how Anion Marketing helped semiconductor and tech brands with their marketing initiatives.",
-        isCta: true, // Marker for the special 'View More' card
+        isCta: true, 
     },
 ];
 
@@ -33,11 +33,7 @@ const WorkCard = ({ data }) => {
         ? "flex flex-col justify-between p-6 text-neutral-700 bg-white border-t border-l border-r border-gray-200" // CTA card styling
         : "p-14 pl-4 text-neutral-700 bg-white border-r border-t border-l border-b border-gray-200 border-neutral-200 lg:border-r border-b-neutral-200 border-b lg:border-b-0 tracking-wider"; // Standard card styling
     
-    // On medium screens (md:), the 4-column grid breaks to 2 columns.
-    // This logic ensures border-right is only removed for the *actual* last card in a row.
-    // For large screens, we remove the border on the 4th card (last-child).
-    // For medium screens, we remove the border on the 2nd and 4th cards (md:even).
-    // The border-b-0 class on the CTA card for lg: ensures the bottom border is removed.
+  
 
     return (
         <div 
@@ -77,10 +73,10 @@ const WorkCard = ({ data }) => {
 // Main Component
 const RecentWorkSection = () => {
     return (
-        <section className="py-16 px-16 ">
-            <div className="w-full mx-auto px-4 sm:px-6 lg:px-4 py-16 ">
+        <section className="px-2 lg:py-16 lg:px-16 ">
+            <div className="w-full mx-auto  lg:px-4 py-8 md:py-16 ">
                 {/* Section Title */}
-                <h2 className="text-4xl font-medium text-[#4a5a7b] mb-10 md:mb-14">
+                <h2 className="text-4xl lg:text-5xl md:text-3xl font-normal text-[#4a5a7b] mb-10 md:mb-14 lg:text-4xl">
                     Our Recent Work
                 </h2>
 

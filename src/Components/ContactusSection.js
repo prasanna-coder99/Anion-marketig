@@ -32,22 +32,22 @@ const App = () => {
        
       >
      
-        <div className="w-full mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full mx-auto px-4 sm:px-2 lg:px-8">
             
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start p-8 md:p-16 lg:p-20"> {/* Padding applied to content inside the max-width container */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start px-2  md:p-16 lg:p-20"> {/* Padding applied to content inside the max-width container */}
 
             {/* Left Content Column */}
-            <div className="space-y-6">
+            <div className="space-y-2">
               {/* Headline */}
               <h1 
-                className="text-4xl sm:text-4xl lg:text-5xl font-normal leading-relaxed tracking-wider text-[#2C438A]"
+                className="text-2xl sm:text-4xl lg:text-5xl font-normal leading-sung tracking-wider text-[#2C438A]"
               
               >
                 Stay Visible and Authentic in the Age of AI with Anion Marketing
               </h1>
 
               {/* Description */}
-              <p className="text-[18px] text-[#444B46] leading-relaxed pt-3">
+              <p className="sm:text-14  lg:text-[18px] text-[#444B46] leading-sung pt-3 sm:pt-1">
                 AI is reshaping marketing—Anion Marketing helps you stay ahead by optimizing AI-driven search visibility, multi-channel strategies, and authentic brand messaging.
               </p>
 
@@ -64,9 +64,9 @@ const App = () => {
               </ul>
 
               {/* Button */}
-              <div className="pt-6">
+              <div className="pt-6 px-14 sm:px-14 lg:px-8">
                 <button 
-                  className="px-8 py-3 text-lg font-normal text-white transition duration-200 bg-[#2c438a] hover:bg-[#48cbe7] py-4"
+                  className="px-8 py-3 text-lg font-normal text-white transition duration-200 bg-[#2c438a] hover:bg-[#48cbe7] py-4 "
                   
                   onClick={() => console.log('Contact Us Clicked')}
                 >

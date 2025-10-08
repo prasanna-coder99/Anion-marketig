@@ -12,6 +12,11 @@
   font-weight:10;
 }
 html, body, #root{
-     overscroll-behavior: none;
+  html, body, #root {
+  height: 100%;
+  overscroll-behavior: none;
+  overflow-x: hidden;
+}
+
     
 }

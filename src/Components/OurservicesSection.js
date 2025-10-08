@@ -1,5 +1,6 @@
 import React from "react";
-import { ArrowRight } from "lucide-react"; // install with: npm install lucide-react
+import { ArrowRight } from "lucide-react"; 
+import OurServices from "./OurServices";
 
 const ServicesData = [
   { title: "Strategic Consulting", description: "Leverage our expertise to create targeted marketing solutions that achieve your goals", iconSrc: "https://cdn.prod.website-files.com/679b17668c8048d0dbb52a1c/67b05aa57426b7ddc9b39d0e_16.svg" },
@@ -47,7 +48,7 @@ const ServiceCard = ({ service }) => (
 
       {/* Description (slides in below title on hover) */}
       {service.description && (
-        <p className="text-[18px] text-white  opacity-0   transition-all duration-500 group-hover:opacity-100 mt-3">
+        <p className="text-[18px] text-white  opacity-0   transition-all duration-500 group-hover:opacity-100 mt-3 mb-4">
           {service.description}
         </p>
       )}
@@ -62,8 +63,8 @@ const OurserviceSection = () => {
       className="min-h-screen p-0 m-0"
       style={{ backgroundColor: "#34393e", fontFamily: "Inter, sans-serif" }}
     >
-      <div className="w-full mx-auto py-20 px-16">
-        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-normal mb-12 px-4 sm:px-6 lg:px-8 text-white">
+      <div className="w-full mx-auto py-20 lg:px-16 md:px-14 sm:px-6">
+        <h2 className="text-4xl sm:text-4xl md:text-6xl lg:text-6xl font-normal mb-12 px-4  lg:px-8 text-white">
           Our Services
         </h2>
 
@@ -80,6 +81,7 @@ const OurserviceSection = () => {
         {/* Bottom section */}
         <div className="mt-16  px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-4">
+            <div className="flex flex-col gap-6">
             <p
               className="text-[18px] leading-relaxed  "
               style={{ color: "#dcdcdc" }}
@@ -89,13 +91,13 @@ const OurserviceSection = () => {
             </p>
         
             <button
-              className="px-8 py-3 text-lg   bg-[#2c438a] hover:bg-[#48cbe7] font-medium text-white "
+              className=" w-fit px-8 py-4 text-[16px]  bg-[#2c438a] hover:bg-[#48cbe7] font-medium text-white tracking-wider "
               
               
             >
               View More
             </button>
-            
+            </div>
           </div>
         </div>
       </div>
